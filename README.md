@@ -88,38 +88,3 @@ Open `js/translations.js` to modify interface labels, section titles, button cop
 
 This website is a zero-dependency static site and can be deployed anywhere with zero build configuration.
 
-### Deploying to Netlify (with Working Contact Form)
-
-#### Implementation & Verification Status Matrix
-- **Implemented in source code:** Complete static form markup with Netlify Forms detection attributes (`data-netlify="true"`, `data-netlify-honeypot="bot-field"`), hidden `form-name` (`portfolio-contact`), hidden notification `subject`, accessible client-side validation, Honeypot spam defense, URL-encoded AJAX submission, and bilingual status feedback.
-- **Ready for deployment:** Zero-build static architecture; all assets in `outputs/` are self-contained and ready to publish.
-- **Requires Netlify configuration:** Email notification forwarding to `camtuct242@gmail.com` must be configured inside the Netlify Dashboard under **Site configuration > Forms > Submission notifications** once the site is deployed.
-- **Not yet verified through a real submission:** Live email delivery to `camtuct242@gmail.com` cannot be tested locally and requires an actual post-deployment submission on the published Netlify domain.
-
-1. Push the contents of `outputs/` to your GitHub repository (e.g. `camtuct242-Hazel/portfolio`) or deploy directly via Netlify CLI / Web app.
-2. In the Netlify site settings:
-   - Connect your repository and select the target branch.
-   - Set the publish directory to `outputs` (or root if repository root).
-3. **Netlify Forms Detection**:
-   - The form is named `portfolio-contact` and is pre-rendered in static HTML (`index.html`) with `data-netlify="true"` and `data-netlify-honeypot="bot-field"`.
-   - Netlify will automatically detect `portfolio-contact` during deployment.
-4. **Configuring Email Notifications to `camtuct242@gmail.com`**:
-   - In the Netlify dashboard, open the site and navigate to **Site configuration > Forms** (or the **Forms** tab).
-   - Verify that `portfolio-contact` appears in the list of active forms.
-   - Under **Forms > Submission notifications**, click **Add notification** and choose **Email notification**.
-   - Set the recipient email to: `camtuct242@gmail.com`.
-   - Select notification event: *New form submission*.
-   - Save the notification.
-5. **Live Verification**:
-   - Visit the deployed website, submit a real test message, and verify that the notification arrives in your inbox at `camtuct242@gmail.com`.
-
-### Deploying to Vercel
-1. Install Vercel CLI (`npm i -g vercel`) or connect your GitHub repository directly at [vercel.com](https://vercel.com).
-2. Set the Root Directory to `outputs` (if deploying the subfolder) or the repo root.
-3. Deploy — Vercel will immediately serve `index.html`.
-
-### Deploying to GitHub Pages
-1. Push the contents of `outputs/` to your GitHub repository (e.g. `camtuct242-Hazel/portfolio`).
-2. Go to **Settings > Pages**.
-3. Under **Branch**, select `main` (or `gh-pages`) and root folder `/` (or `/docs`).
-4. Save — your website will be live at `https://camtuct242-hazel.github.io/portfolio/`.
