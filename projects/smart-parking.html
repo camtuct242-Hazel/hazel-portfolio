@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Parking Management System — Case Study | Hazel (Nguyễn Đăng Cẩm Tú)</title>
+  <meta name="description" content="Case Study: Smart Parking Management System (IParking). Two-product ecosystem with Mobile Booking App and Web PMS. Responsible for Web PMS Use Cases UC11–UC16.">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-logo" aria-label="Hazel Portfolio Home">
+        <span>HAZEL</span>
+        <span class="brand-dot"></span>
+        <span class="brand-role" data-i18n="brandTitle">Business Analyst</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="../index.html#projects" class="nav-link" data-i18n="navProjects">Projects</a>
+        <a href="../index.html#experience" class="nav-link" data-i18n="navExperience">Experience</a>
+        <a href="../index.html#skills" class="nav-link" data-i18n="navSkills">Capabilities</a>
+        <a href="../index.html#contact" class="nav-link" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switcher" role="group" aria-label="Language Switcher">
+          <button class="lang-btn lang-btn-en active" type="button" aria-label="Switch to English">EN</button>
+          <button class="lang-btn lang-btn-vi" type="button" aria-label="Chuyển sang Tiếng Việt">VI</button>
+        </div>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Case Study Hero -->
+    <section class="case-study-hero">
+      <div class="container">
+        <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+          <a href="../index.html" data-i18n="backHome">← Back to Home</a>
+          <span>/</span>
+          <span style="color: var(--color-coffee-bean);" id="csBreadcrumb">Smart Parking System</span>
+        </nav>
+
+        <div class="badge-pill">
+          <span id="csDomain">Mobility Tech / Smart City / IoT Parking Management System</span>
+        </div>
+
+        <h1 style="margin-top: 14px; margin-bottom: 8px;" id="csTitle">Smart Parking Management System (IParking)</h1>
+        <p class="lead text-muted" id="csSubtitle">Multi-Platform Mobility Ecosystem (Mobile Booking App & Web PMS)</p>
+
+        <!-- Meta Bar -->
+        <div class="case-study-meta-bar">
+          <div class="meta-item">
+            <h5 data-i18n-cs="roleLabel">My Role</h5>
+            <p id="csRole">IT Business Analyst</p>
+          </div>
+          <div class="meta-item">
+            <h5 data-i18n-cs="authorshipLabel">Scope Responsibility</h5>
+            <p id="csScopeResponsibility">Web PMS Use Cases (UC11–UC16)</p>
+          </div>
+          <div class="meta-item">
+            <h5 data-i18n-cs="architectureLabel">System Architecture</h5>
+            <p id="csArchShort">2 Distinct Products (App + Web)</p>
+          </div>
+          <div class="meta-item">
+            <h5 data-i18n-cs="cycleLabel">Project Scope</h5>
+            <p id="csCycle">Level 1 & 2 Capstone (Team of 4)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Study Body -->
+    <section class="case-study-content">
+      <div class="container" style="max-width: 900px;">
+
+        <!-- 1. Executive Summary & Two-Product Architecture -->
+        <div class="case-study-block">
+          <h2 data-i18n-cs="sec1Title">1. Executive Overview & Two-Product Architecture</h2>
+          <p id="csOverview"></p>
+
+          <h3 style="margin-top: 24px; margin-bottom: 14px; font-size: 1.25rem;" data-i18n-cs="ecosystemHeading">The Two-Product Ecosystem</h3>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;" id="csTwoProductsGrid"></div>
+        </div>
+
+        <!-- 2. Dual SRS & Contribution Boundaries -->
+        <div class="case-study-block">
+          <h2 data-i18n-cs="sec2Title">2. Individual Contribution & Attribution Boundaries</h2>
+
+          <div class="rule-card" style="border-left-color: #174A84;">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+              <span class="attribution-pill responsible-for" data-i18n-cs="pillScope">Responsible for Scope</span>
+              <h4 style="margin: 0;" data-i18n-cs="webUseCasesHeading">Web PMS Use Cases (UC11–UC16)</h4>
+            </div>
+            <p id="csUseCasesDesc"></p>
+          </div>
+
+          <div class="rule-card" style="border-left-color: var(--color-ballet-beige);">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+              <span class="attribution-pill collaborative" data-i18n-cs="pillCollab">Collaboratively Developed</span>
+              <h4 style="margin: 0;" data-i18n-cs="srsHeading">Two Product-Specific SRS Documents</h4>
+            </div>
+            <p id="csDualSrsDesc"></p>
+          </div>
+
+          <div class="rule-card" style="border-left-color: var(--color-ballet-beige);">
+            <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+              <span class="attribution-pill collaborative" data-i18n-cs="pillCollab">Collaboratively Developed</span>
+              <h4 style="margin: 0;" data-i18n-cs="usHeading">~36 User Stories & Acceptance Criteria</h4>
+            </div>
+            <p id="csUserStoriesDesc"></p>
+          </div>
+        </div>
+
+        <!-- 3. Business Context & Problem Statement -->
+        <div class="case-study-block">
+          <h2 data-i18n-cs="sec3Title">3. Business Context & Problem Statement</h2>
+          <p data-i18n-cs="probIntro">Analysis of manual parking lot operations in central Ho Chi Minh City identified four critical problems:</p>
+          <ul id="csProblemList" style="padding-left: 20px; line-height: 1.8;"></ul>
+        </div>
+
+        <!-- 4. Deep Business Logic & Exception Handling -->
+        <div class="case-study-block">
+          <h2 data-i18n-cs="sec4Title">4. Hardware-Software Integration & Business Rules</h2>
+          <p data-i18n-cs="rulesIntro">Detailed operational logic specified for IoT gate automation and exception handling:</p>
+          <div id="csRulesContainer"></div>
+        </div>
+
+        <!-- 5. Key Deliverables & Traceability -->
+        <div class="case-study-block">
+          <h2 data-i18n-cs="sec5Title">5. Verified Deliverables & Artifacts</h2>
+          <div style="overflow-x: auto;">
+            <table class="deliverables-table">
+              <thead>
+                <tr>
+                  <th data-i18n-cs="colDeliverable">Deliverable</th>
+                  <th data-i18n-cs="colAttribution">Attribution</th>
+                  <th data-i18n-cs="colAction">Artifact Link</th>
+                </tr>
+              </thead>
+              <tbody id="csDeliverablesTbody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Case Study Navigation -->
+        <div style="display: flex; justify-content: space-between; align-items: center; padding-top: 36px; border-top: var(--border-subtle); margin-top: 48px; flex-wrap: wrap; gap: 16px;">
+          <a href="partner-wise.html" class="btn btn-outline" data-i18n-cs="prevProject">← Previous: PartnerWise (PW)</a>
+          <a href="../index.html#projects" class="btn btn-primary" data-i18n="backHome">Back to Selected Projects →</a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-primary">
+        <span class="footer-name">Nguyễn Đăng Cẩm Tú (Hazel)</span>
+        <span class="footer-divider">•</span>
+        <span class="footer-role" data-i18n="footerRole">Business Analyst</span>
+      </div>
+
+      <div class="footer-links">
+        <a href="mailto:camtuct242@gmail.com" class="footer-link" aria-label="Email">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          <span>camtuct242@gmail.com</span>
+        </a>
+        <a href="http://www.linkedin.com/in/hazelndct" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="LinkedIn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="https://github.com/camtuct242-Hazel" target="_blank" rel="noopener noreferrer" class="footer-link" aria-label="GitHub">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+
+      <div class="footer-secondary">
+        <span>© 2026 Nguyễn Đăng Cẩm Tú (Hazel). <span data-i18n="footerCopyright">All rights reserved.</span></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/translations.js"></script>
+  <script src="../js/content.js"></script>
+  <script src="../js/projects.js"></script>
+  <script>
+    (function() {
+      const data = projectsData["smart-parking"];
+      let currentLang = localStorage.getItem('hazel_portfolio_lang') || 'en';
+
+      const localizedText = {
+        en: {
+          roleLabel: "My Role",
+          authorshipLabel: "Scope Responsibility",
+          architectureLabel: "System Architecture",
+          cycleLabel: "Project Scope",
+          sec1Title: "1. Executive Overview & Two-Product Architecture",
+          ecosystemHeading: "The Two-Product Ecosystem",
+          sec2Title: "2. Individual Contribution & Attribution Boundaries",
+          pillScope: "Responsible for Scope",
+          webUseCasesHeading: "Web PMS Use Cases (UC11–UC16)",
+          pillCollab: "Collaboratively Developed",
+          srsHeading: "Two Product-Specific SRS Documents",
+          usHeading: "~36 User Stories & Acceptance Criteria",
+          sec3Title: "3. Business Context & Problem Statement",
+          probIntro: "Analysis of manual parking lot operations in central Ho Chi Minh City identified four critical problems:",
+          sec4Title: "4. Hardware-Software Integration & Business Rules",
+          rulesIntro: "Detailed operational logic specified for IoT gate automation and exception handling:",
+          sec5Title: "5. Verified Deliverables & Artifacts",
+          colDeliverable: "Deliverable",
+          colAttribution: "Attribution",
+          colAction: "Artifact Link",
+          prevProject: "← Previous: PartnerWise (PW)"
+        },
+        vi: {
+          roleLabel: "Vai trò",
+          authorshipLabel: "Phụ trách Phân hệ",
+          architectureLabel: "Kiến trúc Hệ thống",
+          cycleLabel: "Quy mô Đồ án",
+          sec1Title: "1. Tổng quan Dự án & Kiến trúc Hai Sản phẩm",
+          ecosystemHeading: "Hệ sinh thái Hai Sản phẩm Đồng bộ",
+          sec2Title: "2. Đóng góp Cá nhân & Ranh giới Sở hữu Tài liệu",
+          pillScope: "Phụ trách Phân hệ",
+          webUseCasesHeading: "Đặc tả Use Case Web PMS (UC11–UC16)",
+          pillCollab: "Phát triển Cùng Nhóm",
+          srsHeading: "Bộ đôi Tài liệu SRS cho Từng Sản phẩm",
+          usHeading: "~36 User Stories & Tiêu chí Nghiệm thu",
+          sec3Title: "3. Bối cảnh Kinh doanh & Bài toán Cần giải quyết",
+          probIntro: "Khảo sát thực tế vận hành bãi xe thủ công tại trung tâm TP.HCM chỉ ra 4 vấn đề lớn:",
+          sec4Title: "4. Tích hợp Phần cứng - Phần mềm & Quy tắc Vận hành",
+          rulesIntro: "Các luồng nghiệp vụ kiểm soát cổng IoT và xử lý ngoại lệ được đặc tả chi tiết:",
+          sec5Title: "5. Danh mục Sản phẩm Bàn giao & Bằng chứng Thực tế",
+          colDeliverable: "Tên Sản phẩm",
+          colAttribution: "Phân định Trách nhiệm",
+          colAction: "Liên kết Bằng chứng",
+          prevProject: "← Dự án trước: PartnerWise (PW)"
+        }
+      };
+
+      function renderCaseStudy(lang) {
+        currentLang = lang;
+        document.documentElement.lang = currentLang;
+        const isVi = currentLang === 'vi';
+        const t = localizedText[currentLang];
+
+        document.querySelectorAll('.lang-btn-en').forEach(b => b.classList.toggle('active', !isVi));
+        document.querySelectorAll('.lang-btn-vi').forEach(b => b.classList.toggle('active', isVi));
+
+        document.getElementById('csTitle').textContent = isVi ? data.titleVi : data.titleEn;
+        document.getElementById('csSubtitle').textContent = isVi ? data.subtitleVi : data.subtitleEn;
+        document.getElementById('csDomain').textContent = isVi ? data.domainVi : data.domainEn;
+        document.getElementById('csRole').textContent = isVi ? data.attributionVi.primaryRole : data.attributionEn.primaryRole;
+        document.getElementById('csScopeResponsibility').textContent = isVi ? "Use Case Web PMS (UC11–UC16)" : "Web PMS Use Cases (UC11–UC16)";
+        document.getElementById('csArchShort').textContent = isVi ? "2 Sản phẩm (App & Web)" : "2 Distinct Products (App + Web)";
+        document.getElementById('csCycle').textContent = isVi ? data.timelineVi : data.timelineEn;
+
+        document.getElementById('csOverview').textContent = isVi ? data.overviewVi : data.overviewEn;
+
+        // Two products grid
+        const prods = isVi ? data.twoProductsVi : data.twoProductsEn;
+        document.getElementById('csTwoProductsGrid').innerHTML = prods.map(p => `
+          <div class="narrative-card" style="margin-top: 0;">
+            <h4 style="font-size: 1.15rem; color: var(--color-coffee-bean);">${p.name}</h4>
+            <p style="font-size: 0.85rem; font-weight: 700; color: var(--color-dusty-rose); margin-bottom: 8px;">Target: ${p.audience}</p>
+            <p style="font-size: 0.925rem; line-height: 1.6; margin-bottom: 0;">${p.functions}</p>
+          </div>
+        `).join('');
+
+        // Attribution descriptions
+        document.getElementById('csUseCasesDesc').textContent = isVi ? data.attributionVi.useCasesOwnership : data.attributionEn.useCasesOwnership;
+        document.getElementById('csDualSrsDesc').textContent = isVi ? data.attributionVi.dualSRSExplanation : data.attributionEn.dualSRSExplanation;
+        document.getElementById('csUserStoriesDesc').textContent = isVi ? data.attributionVi.userStoriesScope : data.attributionEn.userStoriesScope;
+
+        // Problems
+        const problems = isVi ? data.problemVi : data.problemEn;
+        document.getElementById('csProblemList').innerHTML = problems.map(p => `<li>${p}</li>`).join('');
+
+        // Rules
+        const rules = isVi ? data.businessRulesVi : data.businessRulesEn;
+        document.getElementById('csRulesContainer').innerHTML = rules.map(r => `
+          <div class="rule-card">
+            <h4>${r.title}</h4>
+            <p>${r.desc}</p>
+          </div>
+        `).join('');
+
+        // Deliverables
+        document.getElementById('csDeliverablesTbody').innerHTML = data.deliverables.map(del => `
+          <tr>
+            <td style="font-weight: 700;">${isVi ? del.nameVi : del.nameEn}</td>
+            <td>
+              <span class="attribution-pill ${del.type === 'responsible' ? 'responsible-for' : 'collaborative'}">
+                ${isVi ? del.attributionVi : del.attributionEn}
+              </span>
+            </td>
+            <td>
+              <a href="${del.link}" target="_blank" rel="noopener noreferrer" style="color: var(--color-dusty-rose); font-weight: 700;">
+                View Artifact ↗
+              </a>
+            </td>
+          </tr>
+        `).join('');
+
+        // Static i18n
+        document.querySelectorAll('[data-i18n-cs]').forEach(el => {
+          const key = el.getAttribute('data-i18n-cs');
+          if (t[key]) el.textContent = t[key];
+        });
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+          const key = el.getAttribute('data-i18n');
+          if (translations[currentLang] && translations[currentLang][key]) {
+            el.textContent = translations[currentLang][key];
+          }
+        });
+      }
+
+      document.querySelectorAll('.lang-btn-en').forEach(b => b.addEventListener('click', () => {
+        localStorage.setItem('hazel_portfolio_lang', 'en');
+        renderCaseStudy('en');
+      }));
+      document.querySelectorAll('.lang-btn-vi').forEach(b => b.addEventListener('click', () => {
+        localStorage.setItem('hazel_portfolio_lang', 'vi');
+        renderCaseStudy('vi');
+      }));
+
+      const navToggle = document.getElementById('navToggle');
+      const navMenu = document.getElementById('navMenu');
+      if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => navMenu.classList.toggle('open'));
+      }
+
+      renderCaseStudy(currentLang);
+    })();
+  </script>
+</body>
+</html>

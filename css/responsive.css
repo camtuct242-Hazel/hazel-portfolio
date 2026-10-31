@@ -1,0 +1,222 @@
+/* ===================================================================
+   HAZEL'S PERSONAL PORTFOLIO — RESPONSIVE STYLES
+   Breakpoints: 1024px, 768px, 480px
+   =================================================================== */
+
+/* Tablet Landscape & Small Desktop (<= 1024px) */
+@media (max-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .hero-content {
+    align-items: flex-start;
+    text-align: left;
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .hero-ctas {
+    justify-content: flex-start;
+  }
+
+  .about-grid,
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .case-study-meta-bar {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+/* Tablet Portrait & Mobile (<= 768px) */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 68px;
+  }
+
+  .section {
+    padding: 64px 0;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  /* Mobile Navigation Menu */
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background-color: var(--color-vanilla-cream);
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 40px 24px;
+    gap: 24px;
+    border-top: var(--border-subtle);
+    transform: translateY(-150%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform var(--transition-normal), opacity var(--transition-normal), visibility var(--transition-normal);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav-menu.open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-link {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  /* Hero Mobile */
+  .hero {
+    padding: 48px 0 64px 0;
+  }
+
+  .portrait-frame {
+    width: 260px;
+    height: 310px;
+  }
+
+  .portrait-decorative-border {
+    width: 260px;
+    height: 310px;
+    top: -8px;
+    right: -8px;
+  }
+
+  /* Grid Reductions */
+  .about-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Timeline Mobile */
+  .timeline-wrapper::before {
+    left: 12px;
+  }
+
+  .timeline-marker {
+    left: 3px;
+  }
+
+  .timeline-item {
+    padding-left: 36px;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  /* Contact Mobile */
+  .contact-info-card,
+  .contact-form-card {
+    padding: 32px 24px;
+  }
+
+  /* Case Study Meta */
+  .case-study-meta-bar {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .deliverables-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Small Smartphone (<= 480px) */
+@media (max-width: 480px) {
+  .hero-ctas {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-ctas .btn {
+    width: 100%;
+  }
+
+  .hero-lead {
+    font-size: 1.05rem;
+    padding-left: 12px;
+  }
+
+  .hero-value {
+    font-size: 0.925rem;
+    padding: 8px 12px;
+  }
+
+  .project-card {
+    padding: 24px 20px;
+  }
+
+  .contact-info-card,
+  .contact-form-card {
+    padding: 24px 18px;
+  }
+
+  .form-submit-btn {
+    padding: 12px 18px;
+    font-size: 0.95rem;
+  }
+
+  .portrait-frame {
+    width: 220px;
+    height: 260px;
+  }
+
+  .portrait-decorative-border {
+    width: 220px;
+    height: 260px;
+  }
+
+  .footer-primary {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .footer-divider {
+    display: none;
+  }
+
+  .footer-links {
+    gap: 12px;
+  }
+}
+
+/* Reduced Motion for Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
