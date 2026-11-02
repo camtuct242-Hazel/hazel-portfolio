@@ -28,15 +28,17 @@ const portfolioData = {
       roleEn: "IT Business Analyst Intensive Program",
       roleVi: "Chương trình Đào tạo Chuyên sâu IT Business Analyst",
       highlightsEn: [
-        "Completed an intensive 8-month training program simulating the end-to-end Software Development Life Cycle (SDLC) in Agile environments.",
-        "Mastered requirements elicitation, business process modeling (BPMN 2.0, UML), database querying, and IEEE 830 SRS documentation.",
-        "Delivered two full-scale capstone projects (PartnerWise B2B platform & Smart Parking Management System)."
+        "Completed an intensive 8-month training program covering the end-to-end Software Development Life Cycle (SDLC) in Agile environments, from business analysis and requirements engineering to solution validation and testing.",
+        "Developed practical skills in stakeholder analysis, requirements elicitation and documentation (BRD, URD, SRS), business process modeling (BPMN 2.0, UML), wireframing, and functional/non-functional requirements definition.",
+        "Gained technical proficiency through database design and querying (ERD, SQL), API testing with Postman, and software testing practices including UAT and regression testing.",
+        "Applied analytical and technical knowledge across two capstone projects: PartnerWise (B2B Web3 credential platform) and Smart Parking Management System, contributing to business analysis, system documentation, and solution design."
       ],
       highlightsVi: [
-        "Hoàn thành khóa đào tạo chuyên sâu 8 tháng mô phỏng toàn diện Vòng đời Phát triển Phần mềm (SDLC) trong môi trường Agile.",
-        "Thực hành thu thập yêu cầu, mô hình hóa quy trình (BPMN 2.0, UML), truy vấn cơ sở dữ liệu và soạn thảo đặc tả SRS chuẩn IEEE 830.",
-        "Hoàn thiện 2 đồ án lớn với đầy đủ bộ sản phẩm BA (PartnerWise B2B SaaS/Web3 và Smart Parking Management System)."
-      ]
+        "Hoàn thành chương trình đào tạo IT Business Analyst chuyên sâu trong 8 tháng, bao quát toàn bộ vòng đời phát triển phần mềm (SDLC) trong môi trường Agile, từ phân tích nghiệp vụ, quản lý yêu cầu đến xác thực giải pháp và kiểm thử phần mềm.",
+        "Phát triển kỹ năng phân tích các bên liên quan (Stakeholder Analysis), khai thác và đặc tả yêu cầu (Requirements Elicitation & Documentation) thông qua BRD, URD, SRS; mô hình hóa quy trình nghiệp vụ bằng BPMN 2.0, UML; xây dựng Wireframe và xác định yêu cầu chức năng, phi chức năng (FR/NFR).",
+        "Rèn luyện năng lực kỹ thuật thông qua thiết kế và truy vấn cơ sở dữ liệu (ERD, SQL), kiểm thử API bằng Postman và thực hành kiểm thử phần mềm, bao gồm UAT và Regression Testing.",
+        "Vận dụng kiến thức phân tích nghiệp vụ và kỹ thuật vào hai dự án cuối khóa: PartnerWise (nền tảng chứng thực số B2B ứng dụng Web3) và Smart Parking Management System (hệ thống quản lý bãi đỗ xe thông minh), tham gia phân tích nghiệp vụ, đặc tả hệ thống và thiết kế giải pháp."
+]
     },
     {
       id: "ssid",
