@@ -4,7 +4,7 @@ This repository contains the source code and static web assets for the personal 
 
 ## 1. Aesthetic & Design System
 
-- **Design Philosophy:** Balletcore Professional (soft feminine identity combined with rigorous analytical architecture).
+- **Design Philosophy:** Balletcore (soft feminine identity combined with rigorous analytical architecture).
 - **Color Tokens:**
   - `Petal Frost` (`#FFD1DC`): Brand accents and micro-highlights
   - `Coffee Bean` (`#1B1110`): High-contrast typography and prominent headings
